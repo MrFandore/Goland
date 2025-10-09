@@ -101,9 +101,10 @@ curl http://localhost:8080/health
 curl http://localhost:8080/tasks
 
 # Создать задачу
-curl -X POST http://localhost:8080/tasks \
-  -H "Content-Type: application/json" \
-  -d '{"title":"Купить молоко"}'
+Invoke-WebRequest -Uri http://localhost:8080/tasks `
+-Method POST `
+-Headers @{"Content-Type"="application/json"} `
+-Body '{"title":"Купить молоко"}'
 
 # Найти задачи
 curl "http://localhost:8080/tasks?q=молоко"
