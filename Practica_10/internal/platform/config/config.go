@@ -15,7 +15,7 @@ type Config struct {
 func Load() Config {
 	port := os.Getenv("APP_PORT")
 	if port == "" {
-		port = "8083"
+		port = "8080"
 	}
 
 	secret := os.Getenv("JWT_SECRET")
