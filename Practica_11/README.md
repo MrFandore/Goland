@@ -72,8 +72,7 @@ go run ./cmd/api/main.go
 
 ### 5. Проверка работы
 После запуска сервер будет доступен по адресу: `http://localhost:8085`
-
-
+![img.png](Imagine%2Fimg.png)
 
 Для проверки работы API выполните:
 ```bash
@@ -81,11 +80,8 @@ go run ./cmd/api/main.go
 curl -X POST http://localhost:8085/api/v1/notes \
   -H "Content-Type: application/json" \
   -d '{"title":"Тестовая заметка","content":"Это проверка API"}'
-
-# Получение всех заметок
-curl http://localhost:8085/api/v1/notes
 ```
-
+![img_1.png](Imagine%2Fimg_1.png)
 
 ### 6. Остановка сервера
 Для остановки сервера нажмите `Ctrl+C` в терминале.
