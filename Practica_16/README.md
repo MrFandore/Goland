@@ -4,6 +4,7 @@
 **Группа:** ПИМО-01-25
 
 ![cat-silly.gif](Imagine%2Fcat-silly.gif)
+
 ---
 
 ## Цель задания
